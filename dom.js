@@ -7,17 +7,40 @@
   var addTodoForm = document.getElementById('add-todo');
 
   var state = [
-    { id: -3, description: 'first todo' },
-    { id: -2, description: 'second todo' },
-    { id: -1, description: 'third todo' },
+    { id: "", description: "", done: false},
+    // { id: -2, description: 'second todo' },
+    // { id: -1, description: 'third todo' },
   ]; // this is our initial todoList
 
+state[0].id = todoFunctions.generateId;
+// state[0].description = document.getElementByClassName("box")[0].value;
+console.log(state.description);
   // This function takes a todo, it returns the DOM node representing that todo
   var createTodoNode = function(todo) {
-    var todoNode = document.createElement('li');
+    console.log(todo);
+  var todoNode = document.createElement('li');
+  container.appendChild(todoNode);
+  console.log(container);
     // you will need to use addEventListener
-
+  addTodoForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+  // todo.description = descriptionText;
+  // todoFunctions.addTodo(state, todo.description);
+  // console.log(descriptionText);
+});
     // add span holding description
+    this.value = addTodoForm.firstChild.value;
+var newSpan = document.createElement('span');
+newSpan.setAttribute('id', "mySpan");
+document.getElementById('ul').appendChild(newSpan);
+console.log(container);
+// var newContent = document.createTextNode("value");
+// var mySpan = document.getElementById('mySpan').appendChild(newContent);
+ // mySpan.textContent = this.value;
+// document.getElementById("mySpan").textContent = addTodoForm.value;
+
+// this adds the text content
+var addState = todoFunctions.addTodo(state, todo["description"]);
 
     // this adds the delete button
     var deleteButtonNode = document.createElement('button');
