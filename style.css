@@ -2,43 +2,56 @@ body {
   text-align: center;
   background-image: url('https://faithlovejoyhope.files.wordpress.com/2012/06/bee-flower-cute-background.gif');
   background-repeat: no-repeat;
-  background-origin: fixed;
-  background-size: 100%;
+  background-attachment: : fixed;
+  background-size: cover;
+  margin: 0%;
+  background-position: 0%:
 }
 
 .form {
   text-align: center;
   margin-bottom: 180px;
-  margin-top: 50%;
-  
+  margin-top: 5%;
+
 }
 
 li {
-  text-align: left;
-  margin-left: 150px;
-  margin-bottom: 30px;
+  margin-left: 600px;
+  margin-right: 600px;
+  line-height: 1.6;
+  font-size: 35px;
+  list-style-type: decimal;
 }
 
 .box {
-  border-radius: 15%;
-  border-color: #994d00;
-  border-width: 0.5px;
-  width: 300px;
-  height: 25px;
+  border-radius: 20%;
+  border-color: #000033;
+  border-width: 4px;
+  width: 500px;
+  height: 40px;
+  font-size: 20px;
 }
 
 .submit {
-  border-radius: 15%;
-  border-color: #994d00;
-  border-width: 0.5px;
-  width: 80px;
-  height: 25px;
+  border-radius: 20%;
+  border-color: #000080;
+  border-width: 4px;
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
 }
 
 button {
   border-radius: 15%;
-  border-color: #994d00;
-  border-width: 0.5px;
-  width: 30px;
-  height: 15px;
+  border-color: #000080;
+  border-width: 2px;
+  margin-right: 3%;
+  margin-left: 3%;
+  width: 50px;
+  height: 40px;
+}
+
+.h1 {
+  color: #000080;
+  font-size: 60px;
 }
