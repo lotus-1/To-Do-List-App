@@ -1,27 +1,16 @@
 body {
   text-align: center;
-  background-image: url('https://previews.123rf.com/images/mangpor2004/mangpor20041605/mangpor2004160500099/56383918-to-do-list-background-template.jpg');
+  background-image: url('https://faithlovejoyhope.files.wordpress.com/2012/06/bee-flower-cute-background.gif');
   background-repeat: no-repeat;
   background-origin: fixed;
-  background-size: cover;
-  margin-bottom: 10%;
-  margin-top: 17%;
-
-}
-
-.h1 {
-  font-size: 25px;
-  font-style: oblique;
-  color: #994d00;
-  text-align: left;
-  margin-left: 150px;
-  margin-bottom: 30px;
+  background-size: 100%;
 }
 
 .form {
-  text-align: left;
-  margin-left: 150px;
-  margin-bottom: 30px;
+  text-align: center;
+  margin-bottom: 180px;
+  margin-top: 50%;
+  
 }
 
 li {
@@ -38,10 +27,18 @@ li {
   height: 25px;
 }
 
-.button {
+.submit {
   border-radius: 15%;
   border-color: #994d00;
   border-width: 0.5px;
   width: 80px;
   height: 25px;
+}
+
+button {
+  border-radius: 15%;
+  border-color: #994d00;
+  border-width: 0.5px;
+  width: 30px;
+  height: 15px;
 }
