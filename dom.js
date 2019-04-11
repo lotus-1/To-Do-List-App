@@ -7,40 +7,21 @@
   var addTodoForm = document.getElementById('add-todo');
 
   var state = [
-    { id: "", description: "", done: false},
+    // { id: -3, description: 'first todo', },
     // { id: -2, description: 'second todo' },
     // { id: -1, description: 'third todo' },
   ]; // this is our initial todoList
 
-state[0].id = todoFunctions.generateId;
-// state[0].description = document.getElementByClassName("box")[0].value;
-console.log(state.description);
   // This function takes a todo, it returns the DOM node representing that todo
   var createTodoNode = function(todo) {
-    console.log(todo);
   var todoNode = document.createElement('li');
-  container.appendChild(todoNode);
-  console.log(container);
-    // you will need to use addEventListener
-  addTodoForm.addEventListener('submit', function(event) {
-    event.preventDefault();
-  // todo.description = descriptionText;
-  // todoFunctions.addTodo(state, todo.description);
-  // console.log(descriptionText);
-});
-    // add span holding description
-    this.value = addTodoForm.firstChild.value;
-var newSpan = document.createElement('span');
-newSpan.setAttribute('id', "mySpan");
-document.getElementById('ul').appendChild(newSpan);
-console.log(container);
-// var newContent = document.createTextNode("value");
-// var mySpan = document.getElementById('mySpan').appendChild(newContent);
- // mySpan.textContent = this.value;
-// document.getElementById("mySpan").textContent = addTodoForm.value;
+  // add span holding description
+  var newSpan = document.createElement('span');
+  var newContent = document.createTextNode(todo.description);
+  newSpan.appendChild(newContent);
+  todoNode.appendChild(newSpan);
 
-// this adds the text content
-var addState = todoFunctions.addTodo(state, todo["description"]);
+  // you will need to use addEventListener
 
     // this adds the delete button
     var deleteButtonNode = document.createElement('button');
@@ -51,7 +32,16 @@ var addState = todoFunctions.addTodo(state, todo["description"]);
     todoNode.appendChild(deleteButtonNode);
 
     // add markTodo button
-
+    var markButtonNode = document.createElement('button');
+    markButtonNode.addEventListener('click', function(event) {
+      var newState = todoFunctions.markTodo(state, todo.id);
+      update(newState);
+    });
+    if (todo.done) {
+      var markLine = todo.description.strike();
+      newSpan.innerHTML = markLine;
+    }
+    todoNode.appendChild(markButtonNode);
     // add classes for css
 
     return todoNode;
@@ -63,11 +53,11 @@ var addState = todoFunctions.addTodo(state, todo["description"]);
       // https://developer.mozilla.org/en-US/docs/Web/Events/submit
       // what does event.preventDefault do?
       // what is inside event.target?
-
-      var description = '?'; // event.target ....
+      event.preventDefault();
+      var description = event.target.firstElementChild.value; // event.target ....
 
       // hint: todoFunctions.addTodo
-      var newState = []; // ?? change this!
+      var newState = todoFunctions.addTodo(state, {description: description, done: false}); // ?? change this!
       update(newState);
     });
   }
