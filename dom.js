@@ -34,7 +34,7 @@
 
     // add markTodo button
     var markButtonNode = document.createElement('button');
-    markButtonNode.setAttribute("class", "fa fa-ckeck");
+    markButtonNode.setAttribute("class", "fa fa-check");
     markButtonNode.addEventListener('click', function(event) {
       var newState = todoFunctions.markTodo(state, todo.id);
       update(newState);
