@@ -44,7 +44,7 @@ function reset() {
     });
     if (todo.done) {
       var markLine = todo.description.strike();
-      newSpan.innerHTML = markLine;
+      newSpan.textContent = markLine;
     }
     todoNode.appendChild(markButtonNode);
     // add classes for css
