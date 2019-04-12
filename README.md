@@ -1,7 +1,7 @@
 # ToDo-List
-ToDo list is a simple web application to save Your daily tasks in order not to miss anything.
-link:
-# Our team:
+ToDo list is a simple web application to save your daily tasks in order not to miss anything.   
+link: <https://lotus-1.github.io/To-Do-List-App/>
+  # Our team:
 
 ##### Sahar Saker : https://github.com/saharsaker <br>
 ##### Nariman Pro : https://github.com/NaremanPro <br>
@@ -16,3 +16,8 @@ link:
 * HTML
 * CSS
 * JavaScript
+           
+
+
+##### We hope that you enjoy using our web application.
+ If you have any questions or suggestions we will be happy to hear from you at <violette1988@gmail.com>.
