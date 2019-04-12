@@ -16,29 +16,29 @@ body {
 }
 
 li {
-  margin-left: 200px;
-  margin-right: 200px;
-  line-height: 1.6;
-  font-size: 35px;
+  margin-left: 600px;
+  margin-right: 600px;
+  line-height: 1.9;
+  font-size: 40px;
   list-style-type: decimal;
 }
 
 .box {
   border-radius: 20%;
   border-color: #000033;
-  border-width: 4px;
-  width: 500px;
-  height: 40px;
-  font-size: 20px;
+  border-width: 5px;
+  width: 650px;
+  height: 50px;
+  font-size: 35px;
 }
 
 .submit {
   border-radius: 20%;
   border-color: #000080;
   border-width: 4px;
-  width: 100px;
-  height: 40px;
-  font-size: 20px;
+  width: 200px;
+  height: 50px;
+  font-size: 30px;
 }
 
 button {
@@ -53,5 +53,5 @@ button {
 
 .h1 {
   color: #000080;
-  font-size: 60px;
+  font-size: 80px;
 }
