@@ -6,6 +6,9 @@
   var container = document.getElementById('todo-container');
   var addTodoForm = document.getElementById('add-todo');
 
+function reset() {
+  document.getElementById("box").value = "";
+}
   var state = [
     // { id: -3, description: 'first todo', },
     // { id: -2, description: 'second todo' },
@@ -61,15 +64,14 @@
       // hint: todoFunctions.addTodo
       var newState = todoFunctions.addTodo(state, {description: description, done: false}); // ?? change this!
       update(newState);
+      reset();
     });
   }
-
   // you should not need to change this function
   var update = function(newState) {
     state = newState;
     renderState(state);
   };
-
   // you do not need to change this function
   var renderState = function(state) {
     var todoListNode = document.createElement('ul');
@@ -77,7 +79,6 @@
     state.forEach(function(todo) {
       todoListNode.appendChild(createTodoNode(todo));
     });
-
     // you may want to add a class for css
     container.replaceChild(todoListNode, container.firstChild);
   };
