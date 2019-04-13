@@ -1,11 +1,11 @@
 body {
   text-align: center;
-  background-image: url('https://as2.ftcdn.net/jpg/00/78/51/35/500_F_78513559_9ZSeU1o0j11Vqs8FS3YVGgPVRc0WHq4G.jpg');
+  background-image: url('https://cdn1.vectorstock.com/i/1000x1000/70/40/to-do-list-in-line-on-a-blue-background-vector-14967040.jpg');
   background-repeat: no-repeat;
   background-attachment: : fixed;
   background-size: cover;
   margin: 0%;
-  background-position: 0%:
+  background-position: 50% 50%:
 }
 
 .form {
@@ -31,7 +31,7 @@ li {
   border-width: 5px;
   width: 600px;
   height: 40px;
-  font-size: 30px;
+  font-size: 45px;
   margin-top: 5%;
 }
 
@@ -41,7 +41,7 @@ li {
   border-width: 4px;
   width: 200px;
   height: 50px;
-  font-size: 30px;
+  font-size: 45px;
 }
 
 button {
@@ -54,12 +54,13 @@ button {
   height: 40px;
 }
 
-.h1 {
-  color: #000080;
-  font-size: 80px;
-}
-
 ul {
   margin-top: 20%;
-  margin-bottom: 20%
+  margin-bottom: 10%
 }
+
+/* @media only screen and (max-width: 600px) {
+  li {font-size: 60px;}
+  .box {font-size: 60px;}
+  .submit {font-size: 60px;}
+} */
