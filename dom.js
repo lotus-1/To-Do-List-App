@@ -44,11 +44,10 @@ function reset() {
     });
     if (todo.done) {
       var markLine = todo.description.strike();
-      newSpan.textContent = markLine;
+      newSpan.innerHTML = markLine;
     }
     todoNode.appendChild(markButtonNode);
     // add classes for css
-
     return todoNode;
   };
 
